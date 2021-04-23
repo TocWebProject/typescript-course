@@ -57,6 +57,7 @@ TypeScript transpiles by default to ES3
 Use the -w watch mode to compile at each changes: tsc main.ts -w
 
 
+
 *** CONFIG tscong.json ***
 
 Configure compilerOptions: rootDir & outDir
@@ -64,7 +65,7 @@ Then just "tsc -w" in the terminal and no more "tsc main.ts -w"
 
 
 
-*** Variables ***
+*** VARIABLES ***
 
 Const are real Const. asigning a type.
 
@@ -86,5 +87,9 @@ We using let & const in Ts but TypeScript transpiles everything in JS ES3
 so "let" in main.ts hello: string = "world"; will be var hello = "world"; in main.js
 
 
+
+*** FUNCTIONS ***
+
+Its safer to define everything explicitly !
 
 
