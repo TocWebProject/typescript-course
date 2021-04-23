@@ -1,10 +1,10 @@
-interface User {
+interface UserInterface {
     name: string;
     age?: number;
     getMessage(): string;
 }
 
-const user: User = {
+const user: UserInterface = {
     name: "Monster",
     age: 22,
     getMessage() {
@@ -12,7 +12,7 @@ const user: User = {
     }
 }
 
-const user2: User = {
+const user2: UserInterface = {
     name: "Jack",
     getMessage() {
         return "Hello" + " " + this.name; 
