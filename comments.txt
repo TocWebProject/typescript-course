@@ -1,0 +1,63 @@
+*** Notes about TypeScript ***
+
+Ts is an extension to Js. Most popular static type extension for Js.
+-> Ts adding some safety stuff for big project
+-> We see error when transpiling and not in the runtime
+-> With Ts we can have Data Types, helps us to work with entitites, ex: entity: user with properties.
+-> Ts cant be run into browsers directly, need to be transpiled into Js
+-> We carn run JS and Ts simultaneously in the same project
+-> Ts helps to write code betters -- Plan for the app a real architectur and data types
+
+
+Ex with class Person
+
+JAVASCRIPT
+
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName() {
+        return this.firstName + " " + this.lastName
+    }
+}
+
+const person = new Person("Monster, "lessons")
+
+TypeScript
+
+class Person {
+    firstName: string;
+    lastName: string;
+
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName(): string {
+        return this.firstName + " " + this.lastName
+    }
+}
+
+const person = new Person("Monster, "lessons")
+
+
+
+*** SETTING UP ***
+
+-> Need node 
+-> Install TypeScript Globaly / tsc -v
+
+to transpile some file: we run command line tsc main.ts to create main.js
+TypeScript transpiles by default to ES3
+
+Use the -w watch mode to compile at each changes: tsc main.ts -w
+
+
+
+
+
+
