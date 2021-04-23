@@ -64,7 +64,26 @@ Then just "tsc -w" in the terminal and no more "tsc main.ts -w"
 
 
 
+*** Variables ***
 
+Const are real Const. asigning a type.
+
+-> this can not working:
+const hello = "world";
+hello = "foo"
+
+To change a propertie we need to use "let" of course !
+
+let hello = "world";
+hello = "foo";
+
+WARNING: WE CAN CHANGE VALUE ONLY TO THE SAME TYPE. 
+-> the type stay consistant
+
+its also better to always specify types explicitly in definition
+
+We using let & const in Ts but TypeScript transpiles everything in JS ES3
+so "let" in main.ts hello: string = "world"; will be var hello = "world"; in main.js
 
 
 
