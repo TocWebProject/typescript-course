@@ -97,6 +97,13 @@ Its safer to define everything explicitly !
 *** INTERFACES ***
 
 Interfaces in Ts help us to create objects with properties, help us to describe entitites
-By default all properties inside interface are mandatory but if a type can be undefined we have to put "?" after his declaration
+By default all properties inside interface are mandatory but if a type can be undefined we have to put "?" after his declaration.
+
+It's not just about code style, its about trying to plan the architecture in entitites et how they communicate each other.
+WARNING not creating to many Interfaces
+
+        * Functions in Interfaces *
+        Definition of the type in of the function the interface
+        Then adding the function into our users declarations.
 
 
