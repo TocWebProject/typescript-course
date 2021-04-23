@@ -102,8 +102,18 @@ By default all properties inside interface are mandatory but if a type can be un
 It's not just about code style, its about trying to plan the architecture in entitites et how they communicate each other.
 WARNING not creating to many Interfaces
 
-        * Functions in Interfaces *
-        Definition of the type in of the function the interface
-        Then adding the function into our users declarations.
+    * Functions in Interfaces *
+    Definition of the type in of the function the interface
+    Then adding the function into our users declarations.
+    Add a postfix to the interface name to prevent Name collusion with class
+
+
+
+*** TYPES AND UNIONS ***
+
+    * Union operator in TypeScript *
+    operator to combine data types
+
+
 
 

@@ -1,23 +1,14 @@
 interface UserInterface {
     name: string;
-    age?: number;
-    getMessage(): string;
+    surname: string;
 }
 
-const user: UserInterface = {
-    name: "Monster",
-    age: 22,
-    getMessage() {
-        return "Hello" + " " + this.name;
-    }
-}
+let username: string = "Yann";
 
-const user2: UserInterface = {
-    name: "Jack",
-    getMessage() {
-        return "Hello" + " " + this.name; 
-    }
-}
+// pageName can be a string or a number
+let pageName: string | number = "1";
 
-console.log(user.getMessage());
-console.log(user2.getMessage());
+// Assing default value null for errorMessage
+let errorMessage: string | null = null;
+
+let user: UserInterface | null = null;
