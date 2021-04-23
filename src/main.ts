@@ -1,7 +1,15 @@
+type ID = string;
+type PopularTag = string;
+
 interface UserInterface {
+    // Unique entity that wen can use everywhere
+    id: ID;
     name: string;
     surname: string;
 }
+
+// Brings clarity to the code - 
+const popularTags: PopularTag[] = ["dragon", "coffee"]
 
 let username: string = "Yann";
 

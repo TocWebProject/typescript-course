@@ -114,6 +114,10 @@ WARNING not creating to many Interfaces
     * Union operator in TypeScript *
     operator to combine data types
 
+    * Types alias in TypeScript *
+    We have in TypeScript Basic Type: String, Number, Array ect..
+    But we can create our own Type alias
+
 
 
 
