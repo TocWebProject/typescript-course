@@ -93,3 +93,10 @@ so "let" in main.ts hello: string = "world"; will be var hello = "world"; in mai
 Its safer to define everything explicitly !
 
 
+
+*** INTERFACES ***
+
+Interfaces in Ts help us to create objects with properties, help us to describe entitites
+By default all properties inside interface are mandatory but if a type can be undefined we have to put "?" after his declaration
+
+
