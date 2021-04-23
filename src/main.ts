@@ -1,30 +1,44 @@
-type ID = string;
-type PopularTag = string;
-type MaybePopularTag = PopularTag | null;
-
-interface UserInterface {
-    // Unique entity that wen can use everywhere
-    id: ID;
-    name: string;
-    surname: string;
+// VOID to say that we dont return something from the function
+const doSomething = (): void => {
+    console.log("doSomething");
 }
 
-// Brings clarity to the code - 
-const popularTags: PopularTag[] = ["dragon", "coffee"]
+// DONT USE ANY -->> Any type turns off TypeScript checks
+let foo: any = "foo";
 
-// This will work
-const dragonsTag: MaybePopularTag = null;
-console.log(dragonsTag)
-// const dragonsTag: MaybePopularTag = "Hello"; -->> will work too
-// const dragonsTag: MaybePopularTag = []; -->> will not work ! 
-// it cant be a empty array cause Union + Type alias defined in MaybePopularTag 
+// console.log(foo.bar()); ->> we dont get an error, its just ignore. And its a nonsense
 
-let username: string = "Yann";
 
-// pageName can be a string or a number
-let pageName: string | number = "1";
+// NEVER - Function with never can't be executed to the end
+const doSomethingElse = (): never => {
+    throw "never";
+    console.log("doSomethingElse");
+}
 
-// Assing default value null for errorMessage
-let errorMessage: string | null = null;
+// UNKNOWN Just like all types are assignable to any,
+// all types are assignable to unknown. This makes unknown another top type of TypeScript's type system 
 
-let user: UserInterface | null = null;
+
+let value: unknown;
+
+value = true;             // OK
+value = 42;               // OK
+value = "Hello World";    // OK
+value = [];               // OK
+value = {};               // OK
+value = Math.random;      // OK
+value = null;             // OK
+value = undefined;        // OK
+value = new TypeError();  // OK
+value = Symbol("type");   // OK
+
+// let value: unknown;
+
+// let value1: unknown = value;   // OK
+// let value2: any = value;       // OK
+// let value3: boolean = value;   // Error
+// let value4: number = value;    // Error
+// let value5: string = value;    // Error
+// let value6: object = value;    // Error
+// let value7: any[] = value;     // Error
+// let value8: Function = value;  // Error

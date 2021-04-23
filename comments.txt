@@ -120,4 +120,14 @@ WARNING not creating to many Interfaces
 
 
 
+*** ANY / VOID / NEVER / UNKNOWN ***
+    
+    VOID: to say that we dont return something from the function
+
+    ANY: type turns off TypeScript checks
+    ANY is not a solution, but start of bigger problems
+
+    NEVER: Function with never can't be executed to the end
+
+    UNKNOWN: all types are assignable to unknown.
 

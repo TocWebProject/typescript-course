@@ -1,14 +1,34 @@
-// Brings clarity to the code - 
-var popularTags = ["dragon", "coffee"];
-// This will work
-var dragonsTag = null;
-console.log(dragonsTag);
-// const dragonsTag: MaybePopularTag = "Hello"; -->> will work too
-// const dragonsTag: MaybePopularTag = []; -->> will not work ! 
-// it cant be a empty array cause Union + Type alias defined in MaybePopularTag 
-var username = "Yann";
-// pageName can be a string or a number
-var pageName = "1";
-// Assing default value null for errorMessage
-var errorMessage = null;
-var user = null;
+// VOID to say that we dont return something from the function
+var doSomething = function () {
+    console.log("doSomething");
+};
+// DONT USE ANY -->> Any type turns off TypeScript checks
+var foo = "foo";
+// console.log(foo.bar()); ->> we dont get an error, its just ignore. And its a nonsense
+// NEVER - Function with never can't be executed to the end
+var doSomethingElse = function () {
+    throw "never";
+    console.log("doSomethingElse");
+};
+// UNKNOWN Just like all types are assignable to any,
+// all types are assignable to unknown. This makes unknown another top type of TypeScript's type system 
+var value;
+value = true; // OK
+value = 42; // OK
+value = "Hello World"; // OK
+value = []; // OK
+value = {}; // OK
+value = Math.random; // OK
+value = null; // OK
+value = undefined; // OK
+value = new TypeError(); // OK
+value = Symbol("type"); // OK
+// let value: unknown;
+// let value1: unknown = value;   // OK
+// let value2: any = value;       // OK
+// let value3: boolean = value;   // Error
+// let value4: number = value;    // Error
+// let value5: string = value;    // Error
+// let value6: object = value;    // Error
+// let value7: any[] = value;     // Error
+// let value8: Function = value;  // Error
