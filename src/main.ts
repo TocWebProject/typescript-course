@@ -1,5 +1,6 @@
 type ID = string;
 type PopularTag = string;
+type MaybePopularTag = PopularTag | null;
 
 interface UserInterface {
     // Unique entity that wen can use everywhere
@@ -10,6 +11,13 @@ interface UserInterface {
 
 // Brings clarity to the code - 
 const popularTags: PopularTag[] = ["dragon", "coffee"]
+
+// This will work
+const dragonsTag: MaybePopularTag = null;
+console.log(dragonsTag)
+// const dragonsTag: MaybePopularTag = "Hello"; -->> will work too
+// const dragonsTag: MaybePopularTag = []; -->> will not work ! 
+// it cant be a empty array cause Union + Type alias defined in MaybePopularTag 
 
 let username: string = "Yann";
 
