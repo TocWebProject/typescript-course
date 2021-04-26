@@ -131,3 +131,5 @@ WARNING not creating to many Interfaces
 
     UNKNOWN: all types are assignable to unknown.
 
+    Bonus: TYPE ASSERTION --> convert one type to another.
+    "as" operator makes type assertion
