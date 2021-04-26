@@ -135,8 +135,15 @@ WARNING not creating to many Interfaces
     "as" operator makes type assertion
 
 
+
 *** WORKING WITH THE DOM IN TYPESCRIPT  ***
 
     Typescript doesn't know anything about our markup. 
     The Element is the highest class in hierarchy
     We have to specify the Element
+
+
+
+*** CLASSES IN TYPESCRIPT  ***
+    Classes are sugar around prototype, working the same as in JavaScript 
+    but with types its awesome !!
