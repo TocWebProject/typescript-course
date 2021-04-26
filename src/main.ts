@@ -4,9 +4,10 @@ interface UserInterface {
 }
 
 class User implements UserInterface {
-    private firstName: string
-    private lastName: string
+    firstName: string
+    lastName: string
     readonly unchangableName: string
+    static readonly maxAge = 50
 
     constructor(firstName: string, lastName: string) {
         this.firstName = firstName
@@ -27,5 +28,9 @@ class User implements UserInterface {
 }
 
 const user = new User('Toc', 'Dev');
-// The Only properties available for user is getFullName
-console.log(user.getFullName);
+
+console.log(user.firstName);
+
+// With static property we can acces in the Class User only and not in the user we created. 
+// console.log(user.maxAge)  -->> this will not work.
+console.log(User.maxAge);

@@ -73,7 +73,7 @@ Const are real Const. asigning a type.
 const hello = "world";
 hello = "foo"
 
-To change a propertie we need to use "let" of course !
+To change a property we need to use "let" of course !
 
 let hello = "world";
 hello = "foo";
@@ -161,6 +161,10 @@ WARNING not creating to many Interfaces
     * INTERFACE IN CLASSES *
     Define the interface and implements on the class
     It nice to declare the objects or functions that will be shared in the interface of the class
+
+    * STATIC PROPERTY *
+    Something that we are getting in the class itself - maxAge exemple
+
 
   
 
