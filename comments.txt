@@ -5,7 +5,7 @@ Ts is an extension to Js. Most popular static type extension for Js.
 -> We see error when transpiling and not in the runtime
 -> With Ts we can have Data Types, helps us to work with entitites, ex: entity: user with properties.
 -> Ts cant be run into browsers directly, need to be transpiled into Js
--> We carn run JS and Ts simultaneously in the same project
+-> We can run JS and Ts simultaneously in the same project
 -> Ts helps to write code betters -- Plan for the app a real architectur and data types
 
 
@@ -147,3 +147,13 @@ WARNING not creating to many Interfaces
 *** CLASSES IN TYPESCRIPT  ***
     Classes are sugar around prototype, working the same as in JavaScript 
     but with types its awesome !!
+
+    * PUBLIC / PROTECTED / PRIVATE *
+    By default the class is public until we precise it
+    PRIVATE: means that we can use it only inside a class
+    PROTECTED: is allowed in class and it's children when there is a inheritance
+    Warning -> PRIVATE and PROTECTED are only available in TypeScript and not in the Transpiled JavaScript
+
+    * READONLY *
+    Amazing when you want to create some const inside the class. 
+    Readonly mark the element and we know that we cant change it.
