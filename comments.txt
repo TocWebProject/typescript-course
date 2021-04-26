@@ -165,6 +165,13 @@ WARNING not creating to many Interfaces
     * STATIC PROPERTY *
     Something that we are getting in the class itself - maxAge exemple
 
+    * INHERITANCE IN TYPESCRIPT *
+    Same as in JavaScript to extend a class with inheritance.
+    -->> class Admin extends User
+
+    In Admin class we can rewrite properties or add some
+
+
 
   
 

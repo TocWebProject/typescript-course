@@ -27,10 +27,29 @@ class User implements UserInterface {
     }
 }
 
-const user = new User('Toc', 'Dev');
+class Admin extends User {
+    private editor: string
 
+    setEditor(editor: string): void {
+        this.editor = editor
+    }
+
+    getEditor(): string {
+        return this.editor
+    }
+}
+
+
+const user = new User('Toc', 'Dev');
 console.log(user.firstName);
 
 // With static property we can acces in the Class User only and not in the user we created. 
 // console.log(user.maxAge)  -->> this will not work.
 console.log(User.maxAge);
+
+
+
+const admin = new Admin('Axel', "Exal")
+console.log(admin.lastName);
+// we can acces getEditor function cause we added it into our Admin class, acces to all propteries from User class too cause extended !!
+console.log(admin.getEditor);
