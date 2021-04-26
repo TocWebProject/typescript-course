@@ -133,3 +133,10 @@ WARNING not creating to many Interfaces
 
     Bonus: TYPE ASSERTION --> convert one type to another.
     "as" operator makes type assertion
+
+
+*** WORKING WITH THE DOM IN TYPESCRIPT  ***
+
+    Typescript doesn't know anything about our markup. 
+    The Element is the highest class in hierarchy
+    We have to specify the Element
