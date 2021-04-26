@@ -157,3 +157,10 @@ WARNING not creating to many Interfaces
     * READONLY *
     Amazing when you want to create some const inside the class. 
     Readonly mark the element and we know that we cant change it.
+
+    * INTERFACE IN CLASSES *
+    Define the interface and implements on the class
+    It nice to declare the objects or functions that will be shared in the interface of the class
+
+  
+
